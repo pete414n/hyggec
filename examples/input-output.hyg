@@ -1,0 +1,23 @@
+fun printerInt(x: int, y: int): unit = {
+    print("The result of x + y is: ");
+    println(x + y)
+};
+
+println("Please insert two integer values:");
+print("x: ");
+let x: int = readInt();
+print("y: ");
+let y: int = readInt();
+printerInt(x, y);
+
+fun printerFloat(x: float, y: float): unit = {
+    print("The result of x + y is: ");
+    println(x + y)
+};
+
+println("Please insert two floating-point values:");
+print("x: ");
+let x: float = readFloat();
+print("y: ");
+let y: float = readFloat();
+printerFloat(x, y)
