@@ -90,6 +90,10 @@ and Expr<'E,'T> =
     | Add of lhs: Node<'E,'T>
            * rhs: Node<'E,'T>
 
+    /// Subtraction between lhs and rhs.
+    | Sub of lhs: Node<'E,'T>
+           * rhs: Node<'E,'T>
+
     /// Multiplication between lhs and rhs.
     | Mult of lhs: Node<'E,'T>
             * rhs: Node<'E,'T>

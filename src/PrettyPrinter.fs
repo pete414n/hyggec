@@ -89,6 +89,9 @@ let rec internal formatASTRec (node: AST.Node<'E,'T>): Tree =
                             ("rhs", formatASTRec rhs)]
     | Add(lhs, rhs) ->
         mkTree "Add" node [("lhs", formatASTRec lhs)
+                           ("rhs", formatASTRec rhs)]                           
+    | Sub(lhs, rhs) ->
+        mkTree "Sub" node [("lhs", formatASTRec lhs)
                            ("rhs", formatASTRec rhs)]
     | And(lhs, rhs) ->
         mkTree "And" node [("lhs", formatASTRec lhs)
